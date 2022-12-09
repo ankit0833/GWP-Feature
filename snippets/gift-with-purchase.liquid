@@ -1,0 +1,5 @@
+<div class="container">
+    <input type="hidden" data-cartamount value="{{ cart.total_price | money_without_currency | replace:',',''}}">
+    <input type="hidden" data-gift value="{{ settings.gift_with_purchase_amount }}">
+    <input type="hidden" gift-variantid value="{{ settings.gift_with_purchase_product.variants.first.id }}">
+</div>
